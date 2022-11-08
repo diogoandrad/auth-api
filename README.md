@@ -9,3 +9,7 @@ In the project directory, you can run:
 ### `yarn dev`
 
 Runs the api in the development mode.
+
+### `yarn typeorm migration:run`
+
+Runs migrations.

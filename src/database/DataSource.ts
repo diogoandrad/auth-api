@@ -2,14 +2,14 @@ import { DataSource } from "typeorm";
 
 export const dataSource = new DataSource({
     type: 'postgres',
-    host: 'ec2-44-194-92-192.compute-1.amazonaws.com',
-    port: 5432,
-    username: 'xtxjysxpaqizvl',
-    password: 'e0b0379fda5e0b6d898e22911ff0d9452307588466e48a3ace47965562581b58',
-    database: 'dfs4rfppeg7fr7',
+    host: 'localhost',
+    port: 5433,
+    username: 'admin',
+    password: 'ak&v4xbd',
+    database: 'postgres',
     entities: ['src/database/entities/*.ts'],
-    migrations: ['src/database/migrations/*.ts'],
-    ssl: { rejectUnauthorized: false }
+    migrations: ['src/database/migrations/*.ts']
+    // ssl: { rejectUnauthorized: false } use in production
 });
 
 export const initializeDataSource = async () => {
