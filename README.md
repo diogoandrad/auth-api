@@ -2,7 +2,6 @@
 
 O projeto tem uma arquitetura para desenvolvimento de apis futuras. O projeto é uma API RESTFUL e foi desenvolvido em modelo DDD, com arquitetura em camadas, arquitetura limpa, usando principios SOLID, clean code. Uso TypeOrm e postgres para gerenciamento e armazenamento de dados em banco.
 
-* Frontend: https://github.com/diogoandrad/auth-spa.git
 * Database: https://github.com/diogoandrad/auth-db.git
 
 # :computer: Technologies
