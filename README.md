@@ -1,6 +1,6 @@
-# Project Base
+# Project
 
-O projeto tem uma arquitetura base para desenvolvimento de apis futuras. O projeto é uma API RESTFUL e foi desenvolvido em modelo DDD, com arquitetura em camadas, usando principios SOLID, clean code. Uso TypeOrm e postgres para gerenciamento e armazenamento de dados em banco.
+O projeto tem uma arquitetura para desenvolvimento de apis futuras. O projeto é uma API RESTFUL e foi desenvolvido em modelo DDD, com arquitetura em camadas, arquitetura limpa, usando principios SOLID, clean code. Uso TypeOrm e postgres para gerenciamento e armazenamento de dados em banco.
 
 # :computer: Technologies
 
@@ -18,12 +18,12 @@ O projeto tem uma arquitetura base para desenvolvimento de apis futuras. O proje
 
 Clone the project:
 ```bash
-git clone https://github.com/diogoandrad/template-auth-nodejs.git
+git clone https://github.com/diogoandrad/auth-api.git
 ```
 
 Enter the project folder:
 ```bash
-cd template-auth-nodejs
+cd auth-api
 ```
 
 Install dependencies:
