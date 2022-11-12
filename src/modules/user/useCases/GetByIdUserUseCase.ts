@@ -1,15 +1,9 @@
-import { IUserRepository } from "../repositories/IUserRepository";
+import { IUserRepository } from '../repositories/IUserRepository';
 
 export class GetByIdUserUseCase {
+  constructor(private userRepository: IUserRepository) {}
 
-    constructor(
-        private userRepository: IUserRepository
-    ) {}
-    
-    async execute(id: string) {
-
-        return await this.userRepository.findOne({id}, {profile: true});
-
-    }
-
+  async execute(id: string) {
+    return await this.userRepository.findOne({ id }, { profile: true });
+  }
 }

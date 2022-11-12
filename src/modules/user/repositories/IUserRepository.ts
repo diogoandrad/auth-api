@@ -1,4 +1,4 @@
-import { User } from "../../../database/entities/User";
-import { IBaseRepository } from "../../../database/IBaseRepository";
+import { User } from '../../../database/entities/User';
+import { IBaseRepository } from '../../../database/IBaseRepository';
 
-export interface IUserRepository extends IBaseRepository<User> { }
+export interface IUserRepository extends IBaseRepository<User> {}
