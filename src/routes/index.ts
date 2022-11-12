@@ -6,12 +6,12 @@ import { jwtVerify } from "../modules/auth/repositories/AuthRepository";
 
 const routes = Router()
 
-routes.get('/', (request, response) => {
+routes.get('/', jwtVerify, (request, response) => {
     response.json({ message: "Welcome to NodeJs Api!" });
 });
 
-routes.use('/auth', authRouter)
-routes.use('/profiles', profileRouter)
-routes.use('/users', userRouter)
+routes.use('/auth', jwtVerify, authRouter)
+routes.use('/profiles', jwtVerify, profileRouter)
+routes.use('/users', jwtVerify, userRouter)
 
 export { routes }

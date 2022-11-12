@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "tsnd --transpile-only --respawn --ignore-watch ./node_modules ./src/server.ts",
     "start": "node ./dist/server.js",
+    "start:dev": "tsnd --transpile-only --respawn --ignore-watch ./node_modules ./src/server.ts",
     "typeorm": "typeorm-ts-node-commonjs -d ./src/database/DataSource.ts",
     "test:dev": "jest",
     "test:coverage": "jest --coverage"

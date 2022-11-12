@@ -10,7 +10,7 @@ export function jwtSign(payload) {
 export function jwtVerify(request, response, next) {
     const token = request.headers['x-access-token'];
     jwt.verify(token, SECRET, (error, decoded) => {
-        if (error) return response.status(401).json({ message: "Invalid token." })
+        if (error) return response.status(401).json({ message: error.message || 'unknown error' })
         request.userId = decoded.userId;
         next();
     });
