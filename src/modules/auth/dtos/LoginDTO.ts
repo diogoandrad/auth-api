@@ -1,10 +1,4 @@
-export class LoginDTO {
-
-    email: string;
-    password: string;
-
-    constructor(props: LoginDTO) {
-        Object.assign(this, props);
-    }
-
+export class LoginDto {
+  email: string;
+  password: string;
 }
