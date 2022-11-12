@@ -1,21 +1,21 @@
-import { app } from "../app";
-import request from "supertest";
-import { initializeDataSource } from "../database/DataSource";
+import { app } from '../app';
+import request from 'supertest';
+import { initializeDataSource } from '../database/DataSource';
 
 describe('Users', () => {
 
-    // let dataSource: any;
+  // let dataSource: any;
 
-    beforeAll(async () => {
-        return await initializeDataSource();
-    });
+  beforeAll(async () => {
+    return await initializeDataSource();
+  });
 
-    // afterAll(async () => dataSource.destroy());
+  // afterAll(async () => dataSource.destroy());
 
-    test('GetAll', async () => {
+  test('GetAll', async () => {
 
-        await request(app).get('/users').expect(200);
-        
-    });
+    await request(app).get('/users').expect(200);
+
+  });
 
 });
