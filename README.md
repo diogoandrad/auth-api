@@ -1,12 +1,14 @@
 # Project
 
+## :page_facing_up:	Description
+
 O projeto tem uma arquitetura para desenvolvimento de apis futuras. O projeto é uma API RESTFUL e foi desenvolvido em modelo DDD, com arquitetura em camadas, arquitetura limpa, usando principios SOLID, clean code. Uso TypeOrm e postgres para gerenciamento e armazenamento de dados em banco.
 
-# :computer: Technologies
+## :computer: Technologies
 
 :small_blue_diamond: [NodeJs](https://nodejs.org/docs/latest/api/)
 
-# :memo: Functionalities
+## :pushpin: Functionalities
 
 :heavy_check_mark: Authentication
 
@@ -14,7 +16,7 @@ O projeto tem uma arquitetura para desenvolvimento de apis futuras. O projeto é
 
 :heavy_check_mark: Manage profiles
 
-# :arrow_forward: Run
+## :arrow_forward: Run
 
 Clone the project:
 ```bash
@@ -43,7 +45,7 @@ yarn dev
 
 Access: http://localhost:3333/
 
-# :closed_book: License
+## :closed_book: License
 
 Built by [Diogo Andrade](https://github.com/diogoandrad).
 This project is on [MIT license](./LICENSE).
