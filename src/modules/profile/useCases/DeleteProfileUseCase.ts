@@ -1,15 +1,9 @@
-import { IProfileRepository } from "../repositories/IProfileRepository";
+import { IProfileRepository } from '../repositories/IProfileRepository';
 
 export class DeleteProfileUseCase {
+  constructor(private profileRepository: IProfileRepository) {}
 
-    constructor(
-        private profileRepository: IProfileRepository
-    ) {}
-    
-    async execute(id: string) {
-
-        await this.profileRepository.delete(id);
-
-    }
-
+  async execute(id: string) {
+    await this.profileRepository.delete(id);
+  }
 }

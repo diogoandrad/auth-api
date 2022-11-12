@@ -1,20 +1,20 @@
-import { ProfileRepository } from "../repositories/ProfileRepository";
-import { Profile } from "../../../database/entities/Profile";
+import { ProfileRepository } from '../repositories/ProfileRepository';
+import { Profile } from '../../../database/entities/Profile';
 
-import { GetAllProfileUseCase } from "../useCases/GetAllProfileUseCase";
-import { GetAllProfileController } from "./GetAllProfileController";
+import { GetAllProfileUseCase } from '../useCases/GetAllProfileUseCase';
+import { GetAllProfileController } from './GetAllProfileController';
 
-import { GetByIdProfileUseCase } from "../useCases/GetByIdProfileUseCase";
-import { GetByIdProfileController } from "./GetByIdProfileController";
+import { GetByIdProfileUseCase } from '../useCases/GetByIdProfileUseCase';
+import { GetByIdProfileController } from './GetByIdProfileController';
 
-import { CreateProfileUseCase } from "../useCases/CreateProfileUseCase";
-import { CreateProfileController } from "./CreateProfileController";
+import { CreateProfileUseCase } from '../useCases/CreateProfileUseCase';
+import { CreateProfileController } from './CreateProfileController';
 
-import { UpdateProfileUseCase } from "../useCases/UpdateProfileUseCase";
-import { UpdateProfileController } from "./UpdateProfileController";
+import { UpdateProfileUseCase } from '../useCases/UpdateProfileUseCase';
+import { UpdateProfileController } from './UpdateProfileController';
 
-import { DeleteProfileUseCase } from "../useCases/DeleteProfileUseCase";
-import { DeleteProfileController } from "./DeleteProfileController";
+import { DeleteProfileUseCase } from '../useCases/DeleteProfileUseCase';
+import { DeleteProfileController } from './DeleteProfileController';
 
 const profileRepository = new ProfileRepository(Profile);
 
@@ -33,4 +33,10 @@ const updateProfileController = new UpdateProfileController(updateProfileUseCase
 const deleteProfileUseCase = new DeleteProfileUseCase(profileRepository);
 const deleteProfileController = new DeleteProfileController(deleteProfileUseCase);
 
-export { getAllProfileController, getByIdProfileController, createProfileController, updateProfileController, deleteProfileController }
+export {
+  getAllProfileController,
+  getByIdProfileController,
+  createProfileController,
+  updateProfileController,
+  deleteProfileController,
+};

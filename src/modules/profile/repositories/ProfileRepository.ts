@@ -1,4 +1,4 @@
-import { Profile } from "../../../database/entities/Profile";
-import { BaseRepository } from "../../../database/BaseRepository";
+import { Profile } from '../../../database/entities/Profile';
+import { BaseRepository } from '../../../database/BaseRepository';
 
-export class ProfileRepository extends BaseRepository<Profile> { }
+export class ProfileRepository extends BaseRepository<Profile> {}
