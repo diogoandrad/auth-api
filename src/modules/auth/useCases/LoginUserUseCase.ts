@@ -1,12 +1,12 @@
 import bcrypt from 'bcrypt';
 import { IUserRepository } from '../../user/repositories/IUserRepository';
+import { LoginDTO } from '../dtos/LoginDTO';
 import { jwtSign } from '../repositories/AuthRepository';
-import { LoginDto } from '../dtos/LoginDto';
 
 export class LoginUserUseCase {
   constructor(private userRepository: IUserRepository) {}
 
-  async execute(data: LoginDto, response) {
+  async execute(data: LoginDTO, response) {
     const email = data.email;
     const user = await this.userRepository.findOne({ email });
     if (user) {
