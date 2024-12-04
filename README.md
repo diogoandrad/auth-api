@@ -30,17 +30,17 @@ cd auth-api
 
 Install dependencies:
 ```bash
-yarn add
+npm install
 ```
 
 Run migrations:
 ```bash
-yarn typeorm migration:run
+npm run typeorm migration:run
 ```
 
 Run the application:
 ```bash
-yarn dev
+npm run start:dev
 ```
 
 Access: http://localhost:3333/
