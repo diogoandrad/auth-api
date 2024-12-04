@@ -3,10 +3,10 @@ import { DataSource } from 'typeorm';
 export const dataSource = new DataSource({
   type: 'postgres',
   host: 'localhost',
-  port: 5432,
+  port: 5435,
   username: 'admin',
   password: 'ak&v4xbd',
-  database: 'postgres',
+  database: 'auth_api',
   entities: ['src/database/entities/*.ts'],
   migrations: ['src/database/migrations/*.ts'],
   // ssl: { rejectUnauthorized: false } use in production
