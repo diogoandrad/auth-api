@@ -13,7 +13,9 @@ export class LoginUserUseCase {
       const validPassword = await bcrypt.compare(data.password, user.password);
       if (validPassword) {
         const token = jwtSign({ userId: user.id });
-        return response.status(200).json({ accessToken: token });
+        return response
+          .status(200)
+          .json({ accessToken: token, userName: user.name });
       } else {
         return response.status(401).json({ error: 'Invalid password' });
       }
