@@ -8,7 +8,7 @@ export function jwtSign(payload) {
 }
 
 export function jwtVerify(request, response, next) {
-  const token = request.headers['x-access-token'];
+  const token = request.headers['authorization'];
   jwt.verify(token, SECRET, (error, decoded) => {
     if (error)
       return response
