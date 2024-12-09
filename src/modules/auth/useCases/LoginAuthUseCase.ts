@@ -3,7 +3,7 @@ import { IUserRepository } from '../../user/repositories/IUserRepository';
 import { LoginDTO } from '../dtos/LoginDTO';
 import { jwtSign } from '../repositories/AuthRepository';
 
-export class LoginUserUseCase {
+export class LoginAuthUseCase {
   constructor(private userRepository: IUserRepository) {}
 
   async execute(data: LoginDTO, response) {

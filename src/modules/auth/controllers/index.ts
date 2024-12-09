@@ -1,12 +1,12 @@
 import { UserRepository } from '../../user/repositories/UserRepository';
 import { User } from '../../../database/entities/User';
 
-import { LoginUserUseCase } from '../useCases/LoginUserUseCase';
-import { LoginUserController } from './LoginUserController';
+import { LoginAuthUseCase } from '../useCases/LoginAuthUseCase';
+import { LoginAuthController } from './LoginAuthController';
 
 const userRepository = new UserRepository(User);
 
-const loginUserUseCase = new LoginUserUseCase(userRepository);
-const loginUserController = new LoginUserController(loginUserUseCase);
+const loginAuthUseCase = new LoginAuthUseCase(userRepository);
+const loginAuthController = new LoginAuthController(loginAuthUseCase);
 
-export { loginUserController };
+export { loginAuthController };
