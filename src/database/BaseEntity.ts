@@ -1,12 +1,16 @@
-import { PrimaryGeneratedColumn, CreateDateColumn, Column } from 'typeorm';
+import { PrimaryGeneratedColumn, Column } from 'typeorm';
 
-export class BaseEntity {
+export abstract class BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   readonly id: string;
 
-  @CreateDateColumn()
+  @Column({
+    name: 'created_at',
+    type: 'timestamp',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
   createdAt: Date;
 
-  @Column({ default: true })
+  @Column({ name: 'status', type: 'boolean', default: true })
   status: boolean;
 }

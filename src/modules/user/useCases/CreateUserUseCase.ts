@@ -16,8 +16,6 @@ export class CreateUserUseCase {
     const user = new UserDTO(data);
 
     user.id = uuidv4();
-    user.createdAt = new Date();
-    user.status = true;
     user.password = await bcrypt.hash(user.password, 10);
 
     await this.userRepository.create(user);

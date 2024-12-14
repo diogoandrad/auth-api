@@ -1,8 +1,8 @@
 import { Entity, Column } from 'typeorm';
 import { BaseEntity } from '../BaseEntity';
 
-@Entity('profiles')
+@Entity('profile')
 export class Profile extends BaseEntity {
-  @Column()
+  @Column({ name: 'name', type: 'varchar', length: 255 })
   name: string;
 }

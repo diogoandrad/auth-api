@@ -9,7 +9,9 @@ export const dataSource = new DataSource({
   database: 'auth_api',
   entities: ['src/database/entities/*.ts'],
   migrations: ['src/database/migrations/*.ts'],
-  // ssl: { rejectUnauthorized: false } use in production
+  // ssl: { rejectUnauthorized: false },
+  // synchronize: false,
+  // logging: false,
 });
 
 export const initializeDataSource = async () => {
