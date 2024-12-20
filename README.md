@@ -1,8 +1,8 @@
-# Project
+# Auth API
 
 ## :page_facing_up:	Description
 
-O projeto tem uma arquitetura para desenvolvimento de apis futuras. O projeto é uma API RESTFUL e foi desenvolvido em modelo DDD, com arquitetura em camadas, arquitetura limpa, usando principios SOLID, clean code. Uso TypeOrm e postgres para gerenciamento e armazenamento de dados em banco.
+The project is designed with an architecture that supports the development of future APIs. It is a RESTful API developed following the Domain-Driven Design (DDD) model, with a layered architecture and clean architecture principles. The project adheres to SOLID principles and clean code practices. It utilizes TypeORM and PostgreSQL for data management and storage.
 
 ## :computer: Technologies
 
