@@ -1,7 +1,5 @@
 # Auth API
 
-## :page_facing_up:	Description
-
 The project is designed with an architecture that supports the development of future APIs. It is a RESTful API developed following the Domain-Driven Design (DDD) model, with a layered architecture and clean architecture principles. The project adheres to SOLID principles and clean code practices. It utilizes TypeORM and PostgreSQL for data management and storage.
 
 ## :computer: Technologies
