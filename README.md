@@ -49,9 +49,10 @@ Run the application:
 npm run start:dev
 ```
 
-Access: http://localhost:3333/
+## Author
+
+Built by [Diogo Andrade](https://github.com/diogoandrad).
 
 ## License
 
-Built by [Diogo Andrade](https://github.com/diogoandrad).
-This project is on [MIT license](./LICENSE).
+[MIT license](./LICENSE).
