@@ -2,19 +2,27 @@
 
 The project is designed with an architecture that supports the development of future APIs. It is a RESTful API developed following the Domain-Driven Design (DDD) model, with a layered architecture and clean architecture principles. The project adheres to SOLID principles and clean code practices. It utilizes TypeORM and PostgreSQL for data management and storage.
 
-## :computer: Technologies
+## Technologies
 
-:small_blue_diamond: [NodeJs](https://nodejs.org/docs/latest/api/)
+* NodeJs
+* TypeORM
+* JWT
+* Docker
 
-## :pushpin: Functionalities
+## Functionalities
 
-:heavy_check_mark: Authentication
+* Authentication
+* Manage users
+* Manage profiles
 
-:heavy_check_mark: Manage users
+## Run Database
 
-:heavy_check_mark: Manage profiles
+```bash
+docker run --name postgres --memory=2048m -e POSTGRES_PASSWORD="ak&v4xbd" -e POSTGRES_USER="admin"
+  -e POSTGRES_DB="auth_db" -p 5435:5432 -v postgres_data:/var/lib/postgresql/data -d postgres
+```
 
-## :arrow_forward: Run
+## Run Api
 
 Clone the project:
 ```bash
@@ -43,7 +51,7 @@ npm run start:dev
 
 Access: http://localhost:3333/
 
-## :closed_book: License
+## License
 
 Built by [Diogo Andrade](https://github.com/diogoandrad).
 This project is on [MIT license](./LICENSE).
