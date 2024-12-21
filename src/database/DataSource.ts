@@ -6,7 +6,7 @@ export const dataSource = new DataSource({
   port: 5435,
   username: 'admin',
   password: 'ak&v4xbd',
-  database: 'auth_api',
+  database: 'auth_db',
   entities: ['src/database/entities/*.ts'],
   migrations: ['src/database/migrations/*.ts'],
   // ssl: { rejectUnauthorized: false },
