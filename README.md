@@ -19,7 +19,7 @@ The project is designed with an architecture that supports the development of fu
 
 ```bash
 docker run --name postgres --memory=2048m -e POSTGRES_PASSWORD="ak&v4xbd" -e POSTGRES_USER="admin"
-  -e POSTGRES_DB="auth_db" -p 5435:5432 -v postgres_data:/var/lib/postgresql/data -d postgres
+  -e POSTGRES_DB="auth_db" -p 5435:5432 -v postgres-data:/var/lib/postgresql/data -d postgres
 ```
 
 ## Run Api
@@ -55,4 +55,4 @@ Built by [Diogo Andrade](https://github.com/diogoandrad).
 
 ## License
 
-[MIT license](./LICENSE).
+This project is on [MIT license](./LICENSE).
